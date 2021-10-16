@@ -1,0 +1,593 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolivia | Contributions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Righteous&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../botonflotante.css">
+</head>
+
+
+
+<header>
+    <!-- NavBar -->
+    <div class="nav-principal">
+        <nav class="navbar navbar-expand-lg navbar-light my-navbar fixed-top  py-4" id="nav">
+            <div class="container  d-md-flex">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler bg-white" onclick="navBarColor()" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-white"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hover-nav">
+                            <a class="nav-link active" aria-current="page"
+                                href="collaborat/index.html">COLLABORATIONS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PROJECT
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">DESCRIPCION</a></li>
+                                <li><a class="dropdown-item" href="#">DESING</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Engineering/index.html">ENGINEERNING</a></li>
+                                <li><a class="dropdown-item" href="#">HARDWARE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PARTS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item hover-nav">
+                            <a class="nav-link" href="#">HUMAN</a>
+                        </li>
+                        <li class="nav-item hover-nav">
+                            <a class="nav-link" href="#">PRACTICES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Fin navbar -->
+
+
+    <!-- Banner de Imagenes -->
+
+    <div class="pic-wrapper">
+        <figure class="pic-1">
+        </figure>
+        <figure class="pic-2">
+        </figure>
+        <figure class="pic-3">
+        </figure>
+        <figure class="pic-4">
+        </figure>
+        <div class="fondo-banner ">
+        </div>
+        <div class="text-banner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row fila-banner ">
+                        <div class="team">
+                            <h4 class="title-small text-center text-md-start"><span class="text-white">TEAM</span>
+                                BOLIVIA
+                            </h4>
+                        </div>
+                        <h1 class="text-center text-md-start text-white titulo-principal">LABORATORY
+                            PROTOCOLS</h1>
+                        <p class="text-white text-white text-sm-center text-md-start" style="font-size: 20px;"></p>
+                    </div>
+                </div>
+                <!-- 
+                <div class=" d-none d-md-block col-md-4">
+                    <img src="Imagenes Design/arsenito.png" class="logo-arsenito" alt="" />
+                </div> -->
+            </div>
+        </div>
+</header>
+<!-- BOTON FLOTANTE -->
+<div class="wrapper">
+    <input type="checkbox" />
+    <div class="fab"></div>
+    <div class="fac">
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Up"><i class="fas fa-chevron-up"></i></a>
+        <a type="button" onclick="aleatorio()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Random Color"><i class="fas fa-random"></i></a>
+        <a onclick="modoNocturno()" id="luna" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dark Mode"><i
+                class="fas fa-moon"></i></a>
+        <a onclick="modoDia()" id="sol" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sun Mode"><i
+                class="fas fa-sun"></i></a>
+
+        <a onclick="aumentarLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter ++"><i
+                class="fas fa-search-plus"></i></a>
+        <a onclick="disminuirLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter --"><i
+                class="fas fa-search-minus"></i></a>
+    </div>
+</div>
+
+<body id="body">
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://2021.igem.org/wiki/images/0/0b/T--Bolivia--plasmidoParts.png" class="w-100"
+                        alt="">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                    <h2 class="text-celeste">
+                    </h2>
+                    <p>Here we explain in more detail the protocols we plan to
+                        carry out in the lab for each of the phases of the
+                        experimental design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-celeste m-0">
+        <div class="container">
+            <h2 class="text-azul mb-4">I. Competence induction and transformation:</h2>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">1. Materials and reagents:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Sterile distilled water</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Calcium chloride (anhydrous)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> LB agar plates supplemented with appropriate
+                    antibiotic
+                    (Ampicillin: 100 μg/mL or Kanamycin: 50 μg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> E. coli DH5α or BL21</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubator with shaker</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Centrifuge</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Spectrophotometer</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Water bath or heating block</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Eppendorf tubes</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> PCR tubes (200 μL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Metal bacteriological loop</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i>
+                    Drigalski loop</li>
+        </div>
+    </section>
+
+    <section class="bg-celeste m-0">
+        <div class="container">
+            <h5 class="text-celeste mb-4">2. Procedure</h5>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">E.coli strain culture:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take a solid culture colony and inoculate it in 5 mL
+                    of
+                    unsupplemented LB broth.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate with shaking (160 RPM) 18 - 24h at 37°C.
+                </li>
+            </ul>
+            <h5 class="text-celeste mb-4">Preparation of CaCl2 solutions (for 50 mL 1M "stock
+                solution"):</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Weigh 5.05g of anhydrous calcium chloride.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Add 50 mL of distilled water</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Mix until all the calcium chloride is dissolved.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Sterilize in an autoclave</li>
+            </ul>
+
+            <h5 class="text-celeste mb-4">Preparation of CaCl2 solutions (for 50 mL 0.1M )</h5>
+
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> In a 50 mL falcon tube add 5 mL of the 1M
+                    solution and add
+                    45 mL of sterile distilled water.</li>
+            </ul>
+
+
+            <h5 class="text-celeste mb-4">Generation of competent cells:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take 1 mL of the previous culture and inoculate it in
+                    another
+                    tube with 5 mL fresh LB broth and incubate for 3h/37°C with
+                    shaking or until it reaches OD600 0.4 - 0.6.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Pipette 1.5 mL of the culture into an Eppendorf tube
+                    and place
+                    on ice for 20 min.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Centrifuge at 4000 RPM/10 min</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> TDiscard supernatant and resuspend with 1 mL of
+                    ice-cold
+                    0.1M CaCl2 solution.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> TPlace on ice for 30 min.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Centrifuge at 4000 RPM/10 min.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Discard supernatant and resuspend with 200 μL of
+                    ice-cold
+                    0.1M CaCl2 solution.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Aliquot 50 μL into 200 μL PCR tubes.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Add 1 μL of plasmid (1 μg/μL), if the concentration
+                    is lower, a
+                    higher volume must be added.</li>
+            </ul>
+
+            <h5 class="text-celeste mb-4">Heat-shock transformation:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Aliquot 50 μL of the above solution into 200 μL PCR
+                    tubes.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Add 1 μL of plasmid (1 μg/μL), if the plasmid
+                    concentration is
+                    lower, a higher volume has to be added.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Place on ice for 30 min.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Place at 42°C for 30 seconds.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Place on ice for 2 min.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Add 250 μL of unsupplemented LB broth.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate with shaking (225 RPM) for 1h/37°C.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Plate on solid LB agar medium supplemented with the
+                    appropriate antibiotic (200 μL/box and 20 μL/box).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate plates at 37°C/24h and observe results.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class=" mt-5">
+        <div class="container">
+            <h2 class="text-azul mb-4">II. Biosensor arsenic induction (semi-quantitative):</h2>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">1. Materials and reagents:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Materials and reagents</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> LB broth (0.2% glycerol)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Boxes with LB agar supplemented with Kanamycin (50
+                    μg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Sodium arsenite stock solutions (40X)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> (20 - 200 - 400 - 600 - 800 - 2000 - 4000 ppb)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Kanamycin stock solution (5 mg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Distilled water</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Falcon tubes (25 mL - 50 mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Eppendorf tubes</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubator with shaker</li>
+            </ul>
+            <h5 class="text-celeste mb-4">2. Procedure:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Grow the biosensor to be characterised on fresh LB
+                    agar
+                    supplemented with kanamycin (50 μg/mL).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take an isolated colony and inoculate it in 25 mL of
+                    liquid medium
+                    supplemented with kanamycin (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with constant shaking (200 RPM).
+                </li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Measure OD600 of the culture.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dilute in supplemented liquid medium to OD600 =
+                    0.025.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dispense 1 mL into each eppendorf tube.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i>Load 25 μL of the inducer prepared the previous day
+                    into each
+                    corresponding tube (1/40 dilution).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with shaking (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Observe colour generation and analyse results.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class=" bg-celeste mt-5">
+        <div class="container">
+            <h2 class="text-azul mb-4">III. Biosensor lyophilization on paper strips:</h2>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">1. Materials and reagents:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> LB broth (0.2% glycerol)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Boxes with LB agar supplemented with Kanamycin (50
+                    μg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Buffer solution (0.5% peptone, 0.3% meat extract, 10%
+                    gelatine,
+                    1% sodium ascorbate, 5% raffinose, and 5% sodium glutamate)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Filter paper or M3 paper</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Polypropylene tubes (falcon)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Freeze dryer</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Centrifuge</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubator with Shaker</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Sodium arsenite stock solutions (1X)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> (0.5 - 5 - 10 - 15 - 15 - 20 - 50 - 100 ppb)</li>
+            </ul>
+            <h5 class="text-celeste mb-4">2. Procedure:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Grow the biosensor to be lyophilised on fresh LB agar
+                    supplemented with kanamycin (50 μg/mL).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take an isolated colony and inoculate it in 5 mL of
+                    liquid medium
+                    supplemented with kanamycin (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Centrifuge cultures 3500g/6 min and discard
+                    supernatant.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Resuspend in 1 mL of pre-warmed (37°C) protective
+                    solution.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> On 0.5 x 5 cm paper strips deposit 5 μL spots.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dry in laminar flow hood for 5 min in a polypropylene
+                    tube.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dry in a freeze dryer according to the following
+                    programme: 4
+                    mbar/2h, 0.4 mbar/2h, 0.04 mbar/2h.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> For analyte exposure tests dip the strip in 5 mL of
+                    arsenic solution
+                    for 30 min/36°C.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Remove and incubate until colour development.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="mt-5">
+        <div class="container">
+            <h2 class="text-azul mb-4">IV. Biosensor arsenic induction (quantitative):</h2>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">1. Materials and reagents:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> LB broth (0.2% glycerol)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Boxes with LB agar supplemented with Kanamycin (50
+                    μg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Metal stock solutions (40X)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Arsenic (10 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Magnesium (4000 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Iron (4000 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Mercury (80 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Kanamycin stock solution (5 mg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Distilled water</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Falcon tubes (25 mL - 50 mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Eppendorf tubes</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubator with shaker</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Spectrophotometer</li>
+            </ul>
+            <h5 class="text-celeste mb-4">2. Procedure:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Grow the biosensor to be characterised on fresh LB
+                    agar
+                    supplemented with kanamycin (50 μg/mL).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take an isolated colony and inoculate it in 25 mL of
+                    liquid medium
+                    supplemented with kanamycin (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with constant shaking (200 RPM).
+                </li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Measure OD600 of the culture.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dilute in supplemented liquid medium to OD600 =
+                    0.025.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dispense 2 mL into each eppendorf tube.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Load 50 μL of the inducer prepared the previous day
+                    into each
+                    corresponding tube (1/40 dilution).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with shaking (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take absorbance readings at 400 nm in a
+                    spectrophotometer.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Analyse results.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-celeste mt-5">
+        <div class="container">
+            <h2 class="text-azul mb-4">V. Biosensor induction with other metals (specificity):</h2>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">1. Materials and reagents:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> LB broth (0.2% glycerol)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Boxes with LB agar supplemented with Kanamycin (50
+                    μg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Metal stock solutions (40X)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Arsenic (10 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Magnesium (4000 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Iron (4000 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Mercury (80 μM)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Kanamycin stock solution (5 mg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Distilled water</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Falcon tubes (25 mL - 50 mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Eppendorf tubes</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubator with shaker</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Spectrophotometer</li>
+            </ul>
+            <h5 class="text-celeste mb-4">2. Procedure:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Grow the biosensor to be characterised on fresh LB
+                    agar
+                    supplemented with kanamycin (50 μg/mL).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take an isolated colony and inoculate it in 25 mL of
+                    liquid medium
+                    supplemented with kanamycin (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with constant shaking (200 RPM).
+                </li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Measure OD600 of the culture.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dilute in supplemented liquid medium to OD600 =
+                    0.025.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dispense 2 mL into each eppendorf tube.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Load 50 μL of the inducer prepared the previous day
+                    into each
+                    corresponding tube (1/40 dilution).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with shaking (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take absorbance readings at 400 nm in a
+                    spectrophotometer.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Analyse results.</li>
+            </ul>
+        </div>
+    </section>
+    <section class=" mt-5">
+        <div class="container">
+            <h2 class="text-azul mb-4">VI. Biosensor induction with real samples:</h2>
+            <img src="" alt="">
+            <h5 class="text-celeste mb-4">1. Materials and reagents:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> LB broth (0.2% glycerol)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Boxes with LB agar supplemented with Kanamycin (50
+                    μg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Well water samples (OTBs)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Kanamycin stock solution (5 mg/mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Distilled water</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Falcon tubes (25 mL - 50 mL)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Eppendorf tubes</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Syringe filter (0.22 μm)</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubator with shaker</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Spectrophotometer</li>
+            </ul>
+            <h5 class="text-celeste mb-4">2. Procedure:</h5>
+            <ul class="lista">
+                <li><i class="fas fa-check mx-4 text-celeste"></i> GSterilise 10 mL of sample by syringe filter
+                    filtration.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Culture the biosensor to be characterised on fresh LB
+                    agar
+                    supplemented with kanamycin (50 μg/mL).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Take an isolated colony and inoculate it in 20 mL of
+                    liquid medium
+                    supplemented with kanamycin (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i>Incubate 24h/37°C with constant shaking (200 RPM).
+                </li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Measure OD600 of the culture.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dilute in supplemented liquid medium to OD600 =
+                    0.025.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Dispense 2 mL into each eppendorf tube.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Load 500 μL of the sterile sample into the
+                    corresponding tubes
+                    (1/4 dilution).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Incubate 24h/37°C with shaking (200 RPM).</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> In spectrophotometer take absorbance readings at 400
+                    nm and
+                    extrapolate to calibration curve to determine arsenic
+                    concentration.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i>Analyse results.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> IFor semi-quantitative determination dip the strip
+                    with the freeze-
+                    dried biosensors in 5 mL of sterilised sample for 30 min/36°C.</li>
+                <li><i class="fas fa-check mx-4 text-celeste"></i> Remove and incubate at 37°C until colour development.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul">Well-water sampling manual</h2>
+            <p>
+                Our team designed a biosensor to detect arsenic in drinkable-water,
+                which in many cases is found in wells that supply water to different OTBs
+                in Cochabamba and thus to many households within them. We
+                developed a well-water sampling manual where considering the
+                experimental design and the external services involved we explain the
+                steps to be followed. This manual will be used by our team for the
+                development of phase 5 of the experimental design “Biosensor response
+                with real samples”.
+            </p>
+
+
+            <iframe src="https://2021.igem.org/wiki/images/5/5e/T--Bolivia--labprotocol_ARCHIVOPDF.pdf"
+                width="100%" height="600px">
+            </iframe>
+
+            <div class="boton mt-md-5 ">
+                <a class="dedcription-btn"
+                    href="https://2021.igem.org/wiki/images/5/5e/T--Bolivia--labprotocol_ARCHIVOPDF.pdf">
+                    <span class="name-descripeion">
+                        Download</span>
+                    <div class="btn-icon descarga">
+                        <i class="fas fa-download"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">References</h2>
+            <p>1. Bernard, E., & Wang, B. (2017). Synthetic Cell-Based Sensors with Programmed
+                Selectivity and Sensitivity. Biosensors And Biodetection, 349-363.
+            </p>
+            <div style="width: 100%; overflow: hidden;">
+                <a href="https://doi.org/10.1007/978-1-4939-6911-1_23"  class="text-celeste"
+                    target="_blank">https://doi.org/10.1007/978-1-4939-6911-1_23
+                </a>
+            </div>
+            <p>1. Bernard, E., & Wang, B. (2017). Synthetic Cell-Based Sensors with Programmed
+                Selectivity and Sensitivity. Biosensors And Biodetection, 349-363.
+            </p>
+            <div style="width: 100%; overflow: hidden;">
+                <a href="https://doi.org/10.1007/978-1-4939-6911-1_23" class="text-celeste"
+                    target="_blank">https://doi.org/10.1007/978-1-4939-6911-1_23
+                </a>
+            </div>
+
+            <p>
+                2. Stocker, J., Balluch, D., Gsell, M., Harms, H., Feliciano, J., & Daunert, S. et al. (2003).
+                Development of a Set of Simple Bacterial Biosensors for Quantitative and Rapid
+                Measurements of Arsenite and Arsenate in Potable Water. Environmental Science &
+                Technology, 37(20), 4743-4750.
+            </p>
+
+            <div style="width: 100%; overflow: hidden;">
+                <a href="https://doi.org/10.1021/es034258b" class="text-celeste"
+                    target="_blank">https://doi.org/10.1021/es034258b
+                </a>
+            </div>
+            <p>
+                Wan, X., Volpetti, F., Petrova, E., French, C., Maerkl, S., & Wang, B. (2019). Cascaded
+                amplifying circuits enable ultrasensitive cellular sensors for toxic metals. Nature
+                Chemical Biology, 15(5), 540-548.
+            </p>
+            <div style="width: 100%; overflow: hidden;">
+                <a href="https://doi.org/10.1038/s41589-019-0244-3" class="text-celeste"
+                    target="_blank">https://doi.org/10.1038/s41589-019-0244-3
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+<script>
+
+
+    window.addEventListener('scroll', (e) => {
+        let y = window.scrollY;
+        if (y >= 500) {
+            document.getElementById('nav').classList.add('my-nav')
+        } else {
+            document.getElementById('nav').classList.remove('my-nav')
+        }
+        // console.log(y);
+    })
+
+    function navBarColor() {
+        document.getElementById('nav').classList.add('my-nav')
+    }
+</script>
+<script src="../../main.js"></script>
+
+</html>
